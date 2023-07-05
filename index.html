@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://linotrade.tw1.ru/personal/acts/ -->
+<html lang="ru" class="bx-core bx-win bx-no-touch bx-no-retina bx-chrome">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акты-сверки</title>
+  <link rel="icon" href="http://linotrade.tw1.ru/favicon.ico" type="image/x-icon">
+
+
+  <link href="./index_files/ui.design-tokens.min.css" type="text/css" rel="stylesheet">
+  <link href="./index_files/ui.font.opensans.min.css" type="text/css" rel="stylesheet">
+  <link href="./index_files/main.popup.bundle.min.css" type="text/css" rel="stylesheet">
+  <link href="./index_files/core_date.min.css" type="text/css" rel="stylesheet">
+  <link href="./index_files/sticker.min.css" type="text/css" rel="stylesheet">
+  <link href="./index_files/core_panel.min.css" type="text/css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="./index_files/core_hint.css">
+  <link href="./index_files/datepicker.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/normalize.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/style.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/custom.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/popup.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/admin-public.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/hot_keys.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+  <link href="./index_files/pubstyles.min.css" type="text/css" data-template-style="true" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link href="./libs/air-datepicker.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+
+  <!-- эта обёртка нужна для того что бы мега меню каталога адекватно показывалось относительно зафиксированной на странице шапки.  -->
+  <div class="fixed-area">
+    <!-- Шапка -->
+    <header class="header">
+      <div class="wrapper">
+        <!-- верхняя часть -->
+        <div class="top">
+          <div class="logo">
+            <a href="http://linotrade.tw1.ru/">
+              <img src="./index_files/linotrade.svg" alt="Логотип Линотрейд" width="122" loading="lazy"> </a>
+          </div>
+          <div class="menu">
+            <ul class="menu__list list-reset">
+              <li><a href="http://linotrade.tw1.ru/news/"><span>Акции и новости</span></a></li>
+              <li><a href="http://linotrade.tw1.ru/brand/"><span>Производители</span></a></li>
+              <li class="menu__item--mod">
+                <a class="menu__link--mod" href="http://linotrade.tw1.ru/useful/"><span>Полезный раздел</span></a>
+                <ul class="menu__sublist list-reset">
+                  <li><a href="http://linotrade.tw1.ru/useful/documentation/"><span>Документы</span></a></li>
+                  <li><a href="http://linotrade.tw1.ru/useful/dictionary/"><span>Словарь терминов</span></a></li>
+                  <li><a href="http://linotrade.tw1.ru/useful/instructions/"><span>Инструкции</span></a></li>
+                  <li><a href="http://linotrade.tw1.ru/useful/advertising/"><span>Рекламные материалы</span></a></li>
+                </ul>
+              </li>
+              <li><a href="http://linotrade.tw1.ru/contacts/"><span>Контакты</span></a></li>
+            </ul>
+          </div>
+          <div class="tel">
+            <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+          </div>
+
+
+        </div>
+        <!-- КОНЕЦ верхняя часть -->
+
+        <!-- нижняя часть -->
+        <div class="bottom">
+          <a href="http://linotrade.tw1.ru/personal/acts/#"
+            class="button button--catalog catalog-btn-call add-event-mouseover">
+            <span>Каталог</span>
+            <span class="decorate"></span>
+          </a>
+          <form class="mobile_hidden" action="http://linotrade.tw1.ru/search/">
+            <div class="group">
+              <div class="select">
+                <div class="custom-select" data-default="Все категории">
+                  <div class="custom-select__selected"><span>Выберите категорию</span></div>
+                  <div class="custom-select__options">
+                    <div class="custom-select__option" data-value="">Выберите категорию</div>
+                    <div class="custom-select__option" data-value="15">Ковры</div>
+                    <div class="custom-select__option" data-value="16">Ламинат</div>
+                    <div class="custom-select__option" data-value="21">Линолеум</div>
+                    <div class="custom-select__option" data-value="51">Ковролин</div>
+                    <div class="custom-select__option" data-value="17">SPC покрытие</div>
+                    <div class="custom-select__option" data-value="18">Дорожки</div>
+                    <div class="custom-select__option" data-value="19">Нитки</div>
+                    <div class="custom-select__option" data-value="20">Сопутствующие товары</div>
+                  </div>
+                  <input class="visually-hidden" type="hidden" name="section" value="">
+                </div>
+              </div>
+              <div class="search">
+                <div class="search__wrapper">
+                  <input type="search" name="q" placeholder="Поиск по каталогу" value="">
+                  <button class="button button--icon add-event-mouseover">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                        d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z"></path>
+                      <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                        d="M15.135 14.135 21 20"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- панель пользователя (Не используется на мобильных)-->
+          <div class="user-panel ">
+            <ul class="list-reset">
+              <li>
+                <a href="http://linotrade.tw1.ru/personal/"
+                  class="button button--icon button--border add-event-mouseover">
+                  <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21V17.8C17 15.1576 11.7792 13 9 13C6.2208 13 1 15.1576 1 17.8V21" stroke="#505050"
+                      stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                    <path
+                      d="M9 10.6C6.6696 10.6 5 8.872 5 6.6V5C5 2.728 6.6696 1 9 1C11.3304 1 13 2.728 13 5V6.6C13 8.872 11.3304 10.6 9 10.6Z"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"></path>
+                  </svg>
+
+                  <span class="decorate"></span>
+                </a>
+              </li>
+              <li>
+                <!-- избранное -->
+                <a class="cart-button" href="http://linotrade.tw1.ru/personal/favorites/">
+                  <div class="button button--icon button--border add-event-mouseover">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9998 17C17.7227 12.4133 20.4108 10.2107 20.9205 7.09201C21.1788 5.51068 20.8738 3.33602 19.0177 1.99602C16.9401 0.496694 12.9033 1.48803 10.9998 4.37736C9.09701 1.48803 5.05954 0.496694 2.98197 1.99602C1.12581 3.33602 0.820865 5.51068 1.07986 7.09201C1.58881 10.2107 4.27628 12.4133 10.9998 17Z"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                    </svg>
+
+                    <span class="decorate"></span>
+                  </div>
+                  <span class="number i-like-it " title="Количество позиций в избранном">12</span>
+                </a>
+
+              </li>
+              <li>
+                <a class="cart-button" href="http://linotrade.tw1.ru/basket/">
+                  <div class="button button--icon button--border add-event-mouseover">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 3H20.455C21.08 3 21.552 3.566 21.438 4.181L20.15 11.181C20.063 11.655 19.649 12 19.167 12H7"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                      <path
+                        d="M20 16H8.76901C8.31601 16 7.919 15.695 7.802 15.258L4.198 1.742C4.081 1.304 3.68399 1 3.23099 1H0"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                      <path d="M7 19H9" stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                      <path d="M18 19H20" stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </div>
+                  <span id="basketQuantity" class="number hidden" title="Количество позиций в корзине">0</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://linotrade.tw1.ru/notifications/"
+                  class="button button--icon button--border add-event-mouseover">
+                  <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0V2.22222" stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                    <path
+                      d="M11.2858 17.8889C11.2858 18.5022 10.2624 20 9.00007 20C7.73778 20 6.71436 18.5022 6.71436 17.8889"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                    <path
+                      d="M14.7143 13.4286V7.71429C14.7143 4.55829 12.1554 2 9 2C5.84457 2 3.28571 4.55829 3.28571 7.71429V13.4286L1 16.8571V18H17V16.8571L14.7143 13.4286Z"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10"></path>
+                  </svg>
+
+                  <span class="decorate" style="left: 21.5px; top: 5px; width: 0px; height: 0px;"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- КОНЕЦ панель пользователя -->
+
+          <!-- Элементы, которые отражаются только на мобильных устройствах -->
+          <!-- кнопка показа поиска -->
+          <button class="button button--icon button--mobile button--combo add-event-mouseover" type="button"
+            id="search-button">
+            <svg class="off" xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+              <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z">
+              </path>
+              <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                d="M15.135 14.135 21 20"></path>
+            </svg>
+            <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8"></path>
+            </svg>
+            <span class="decorate"></span>
+          </button>
+          <!-- кнопка для звонка -->
+          <a class="button button--icon button--mobile add-event-mouseover" href="tel:88002228320">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path fill="#fff"
+                d="M5.647 12.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 18 14.118c-1.118-1.088-2.745-2.199-4.235-2.824L12 13.06c-.603-.162-2.257-.845-4.235-2.824C5.787 8.258 5.103 6.603 4.94 6l1.765-1.765C6.08 2.745 4.97 1.118 3.882 0A11.83 11.83 0 0 0 0 1.765c.088 1.617 1.059 6 5.647 10.588Z">
+              </path>
+            </svg>
+            <span class="decorate"></span>
+          </a>
+          <!-- кнопка вызова меню -->
+          <button class="button button--icon button--combo button--mobile button--menu add-event-mouseover"
+            type="button" id="menu-button">
+            <svg class="off" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+              <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z"></path>
+            </svg>
+            <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8"></path>
+            </svg>
+            <span class="decorate"></span>
+          </button>
+
+        </div>
+        <!-- КОНЕЦ нижняя часть -->
+
+      </div>
+    </header>
+    <!-- Меню каталога -->
+    <section class="catalog-menu">
+      <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
+
+      <div class="wrapper">
+        <div class="catalog-menu__grid">
+          <!-- табы для переключения менюшек -->
+          <div class="catalog-menu__tabs">
+            <ul class="catalog-menu__tabs-list list-reset">
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link active" href="http://linotrade.tw1.ru/catalog/kovry/"
+                  data-target="#catalog-nav-kovry"><span>Ковры</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/laminat/"
+                  data-target="#catalog-nav-laminat"><span>Ламинат</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/linoleum/"
+                  data-target="#catalog-nav-linoleum"><span>Линолеум</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/kovrolin/"
+                  data-target="#catalog-nav-kovrolin"><span>Ковролин</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/spc-pokrytie/"
+                  data-target="#catalog-nav-spc-pokrytie"><span>SPC покрытие</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/dorozhki/"
+                  data-target="#catalog-nav-dorozhki"><span>Дорожки</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/nitki/"
+                  data-target="#catalog-nav-nitki"><span>Нитки</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link " href="http://linotrade.tw1.ru/catalog/soputstvuyushchie-tovary/"
+                  data-target="#catalog-nav-soputstvuyushchie-tovary"><span>Сопутствующие товары</span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- табы для переключения менюшек -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
+          <div class="catalog-menu__content">
+            <!-- мобильная шапка меню для возврата -->
+            <div class="catalog-menu__return">
+              <a href="http://linotrade.tw1.ru/personal/acts/#">
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 1.21857L2 8.92157L10 17.2665" stroke="#67CB33" stroke-width="2"></path>
+                </svg>
+                <span>Назад</span>
+              </a>
+            </div>
+            <!-- КОНЕЦ мобильная шапка меню для возврата -->
+            <ul class="content__catalog-list list-reset active" id="catalog-nav-kovry">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_1547219295=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Dream Floor</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3012170221=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Джелато</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3915339572=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Портофино</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1795461236=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Bambi</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2504012831=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Rico</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3796305033=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Gina</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1928861976=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Janna</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_100608398=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Silk Way</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2484880406=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Urban</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_713244759=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Аврора Стар</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2919031989=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Брио</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1139967385=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Монблан</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_807183736=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Аврора</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1770303465=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Винсент</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_1532327238=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Khatereh Kavir</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_688362553=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Desert Rose</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2953758083=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Persian Star Embossed Flowers</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3227791628=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Shahriar</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_3421137111=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>SAVIN CARPET</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3339318549=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Nafis</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1500340406=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Dorin</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_778719264=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Nour</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_3771153172=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>EMPERA</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_461047108=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Havanna</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3803569435=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Valentino</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2810482447=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Montana</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2105532707=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Taboo</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_2545945474=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>KREASYON</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_175690165=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Terra</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2957260412=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Elkenz</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1495765833=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Sky</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_4144464487=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>ATLANTIK</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1027864868=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Lisa</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_692938694=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Springs</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_773891039=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Bodrum</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_2272098024=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Сам Антеп Гилам</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3198139982=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Sophistic</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_32604628=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Marakand</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1884685966=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Calypso</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_4191947349=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>ERKAPLAN</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1969685651=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Valencia</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3942879536=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Harmony</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2617549222=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Madeliene</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_2583444381=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Yaren Carpet</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_39859205=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Verona</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_4009429771=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Витебские ковры</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_2656593826=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Циновка ТПЕ</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3994113=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Карпеты</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1627093988=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Монако</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_402410354=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Манхэттен</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1854103419=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Алладин</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1246022066=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Орландо</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3076719002=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Циновка</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_1577100463=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Циновка Санторини</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_2118391450=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>UNICORN CARPETS</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3224290035=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Афина</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3966653737=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Ника</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_428109805=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Beenom</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_7_4035837523=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Люберецкие ковры</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovry/?arrFilter_8_3072979557=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Татами</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-laminat">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_7_127446590=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Camsan</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_7_2660368260=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Dream Floor</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_8_1159954462=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Modern</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_8_3678868925=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Massive</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_7_3918974738=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>AGT</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_8_841265288=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Premium</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/laminat/?arrFilter_8_2889884971=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Elegance</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-linoleum">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_2274021061=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>IVC</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_2000405143=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Vision</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_3996291885=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Velvet</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_2570429371=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Bingo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_122762776=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Golf</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_435051366=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Textura</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_3770289838=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Avanta</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_2680756260=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Pacific</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_2162625244=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Juteks</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_113265054=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Forward</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_1908898056=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Megapolis</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_3905824946=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Forum</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_28151175=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Senator</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_4020497579=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Trend</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_2991318473=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Flash</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_4158667338=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Non-Brand</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_3310146911=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Bazis</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_1734289371=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Beauflor</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_1548059877=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Supreme</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_7_274208589=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Profi</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/linoleum/?arrFilter_8_1990901009=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Master</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-kovrolin">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_7_16083495=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Dream Floor</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_1900491763=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Стаффлор</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_3343058666=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Блэктекс</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_1913307274=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Трава Dream Floor</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_7_155395596=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Нева Тафт</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_3498295193=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Принт</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_7_1770303465=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Сам Антеп Гилам</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_3791138402=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Armada</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_7_1860791280=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Витебские ковры</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/kovrolin/?arrFilter_8_4032114514=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Витебский принт</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-spc-pokrytie">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/spc-pokrytie/?arrFilter_7_2871910706=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Excelente</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-dorozhki">
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_1159954462=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Витебские ковры</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_3937927111=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Канекарон Витебск</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_888517903=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Шегги Софт</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_3673936931=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Шегги</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_1568960705=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Шегги Порто</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_743589328=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Dream Floor</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_3810227328=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Chenille</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_3169671233=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>ATLANTIK</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_3994858278=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>KREASYON</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_2568717232=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>EMPERA</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_1233418=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Floormax</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_3832983705=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Lugano</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_2473689103=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Ombre Plain</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_2147529457=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Velden</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_1581930320=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Lucky</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_1820079570=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Candy</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_420078411=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>UNICORN CARPETS</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_2188530942=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_1846465501=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Люберецкие ковры</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_4033496702=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Sag</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_3382218456=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Baby</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_4118111336=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Reflex</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_509880146=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Moldabela</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_2607375807=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Viva 30</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_2511531405=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Viva</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_1768101828=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Yaren Carpet</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+              </li>
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_7_2396732099=Y&amp;set_filter=Y"
+                    class="content__catalog-link"><span>Чайная Королева</span></a>
+                  <button class="catalog-menu__button button button--icon add-event-mouseover" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"></path>
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="http://linotrade.tw1.ru/catalog/dorozhki/?arrFilter_8_84799516=Y&amp;set_filter=Y"
+                      class="content__catalog-sublink"><span>Фризе Лофт</span></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-nitki">
+            </ul>
+            <ul class="content__catalog-list list-reset " id="catalog-nav-soputstvuyushchie-tovary">
+            </ul>
+          </div>
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
+        </div>
+      </div>
+    </section>
+    <!-- КОНЕЦ Меню каталога для компа -->
+  </div>
+
+  <!-- мобильная панель пользователя (не используется на десктопных)-->
+  <div class="mobile-user-panel">
+
+    <ul class="list-reset">
+      <li>
+        <a class="catalog button--combo" href="http://linotrade.tw1.ru/personal/acts/#" id="mob-catalog-btn-call">
+          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <path fill="#fff"
+              d="M0 0h2v2H0zM0 7h2v2H0zM0 14h2v2H0zM7 0h2v2H7zM7 7h2v2H7zM7 14h2v2H7zM14 0h2v2h-2zM14 7h2v2h-2zM14 14h2v2h-2z">
+            </path>
+          </svg>
+          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8"></path>
+          </svg>
+          <span>Каталог</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://linotrade.tw1.ru/personal/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
+            <path stroke="#505050" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+              d="M17 21v-3.2c0-2.642-5.22-4.8-8-4.8-2.78 0-8 2.158-8 4.8V21M9 10.6c-2.33 0-4-1.728-4-4V5c0-2.272 1.67-4 4-4s4 1.728 4 4v1.6c0 2.272-1.67 4-4 4Z">
+            </path>
+          </svg>
+          <span>Кабинет</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://linotrade.tw1.ru/personal/favorites/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M11 17c6.723-4.675 9.41-6.92 9.92-10.099.259-1.611-.046-3.828-1.902-5.194C16.94.18 12.903 1.19 11 4.135 9.097 1.19 5.06.179 2.982 1.707 1.126 3.073.821 5.29 1.08 6.901 1.589 10.081 4.276 12.325 11 17Z">
+            </path>
+          </svg>
+          <span>Избранное</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://linotrade.tw1.ru/basket/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M7 3h13.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7"></path>
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M20 16H8.769c-.453 0-.85-.305-.967-.742L4.198 1.742A1 1 0 0 0 3.231 1H0M7 19h2M18 19h2"></path>
+          </svg>
+          <span>Корзина</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://linotrade.tw1.ru/notifications/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M9 0v2.222M11.286 17.889C11.286 18.502 10.262 20 9 20s-2.286-1.498-2.286-2.111"></path>
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M14.714 13.429V7.714a5.715 5.715 0 0 0-11.428 0v5.715L1 16.857V18h16v-1.143l-2.286-3.428Z"></path>
+          </svg>
+          <span>сообщения</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- КОНЕЦ мобильная панель пользователя -->
+
+  <!-- мобильное навигационное меню  -->
+  <div class="mobile-menu">
+    <div class="wrapper">
+      <ul class="mobile-menu__list list-reset">
+        <li><a href="http://linotrade.tw1.ru/news/"><span>Акции и новости</span></a></li>
+        <li><a href="http://linotrade.tw1.ru/brand/"><span>Производители</span></a></li>
+        <li class="mobile-menu__item--mod">
+          <a class="mobile-menu__link--mod" href="http://linotrade.tw1.ru/useful/"><span>Полезный раздел</span></a>
+          <button class="button button--icon open add-event-mouseover" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+              <path stroke="#67CB33" stroke-width="2" d="m1 1 8 7.68L1 17"></path>
+            </svg>
+            <span class="decorate"></span>
+          </button>
+          <ul class="mobile-menu__sublist list-reset">
+            <li><a href="http://linotrade.tw1.ru/useful/documentation/"><span>Документы</span></a></li>
+            <li><a href="http://linotrade.tw1.ru/useful/dictionary/"><span>Словарь терминов</span></a></li>
+            <li><a href="http://linotrade.tw1.ru/useful/instructions/"><span>Инструкции</span></a></li>
+            <li><a href="http://linotrade.tw1.ru/useful/advertising/"><span>Рекламные материалы</span></a></li>
+          </ul>
+        </li>
+        <li><a href="http://linotrade.tw1.ru/contacts/"><span>Контакты</span></a></li>
+      </ul>
+      <div class="tel">
+        <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+      </div>
+    </div>
+  </div>
+  <!-- КОНЕЦ мобильное навигационное меню  -->
+
+  <!-- мобильный поиск в шапке -->
+  <div class="mobile-search">
+    <div class="wrapper">
+      <form action="http://linotrade.tw1.ru/search/">
+
+        <div class="mobile-search__grid">
+          <!-- селект -->
+          <div class="select">
+            <div class="custom-select" data-default="Все категории">
+              <div class="custom-select__selected">Выберите категорию</div>
+              <div class="custom-select__options">
+                <div class="custom-select__option" data-value="">Выберите категорию</div>
+                <div class="custom-select__option" data-value="15">Ковры</div>
+                <div class="custom-select__option" data-value="16">Ламинат</div>
+                <div class="custom-select__option" data-value="21">Линолеум</div>
+                <div class="custom-select__option" data-value="51">Ковролин</div>
+                <div class="custom-select__option" data-value="17">SPC покрытие</div>
+                <div class="custom-select__option" data-value="18">Дорожки</div>
+                <div class="custom-select__option" data-value="19">Нитки</div>
+                <div class="custom-select__option" data-value="20">Сопутствующие товары</div>
+              </div>
+              <input class="visually-hidden" type="hidden" name="section" value="">
+            </div>
+          </div>
+          <!-- поиск -->
+          <div class="search">
+            <div class="search__wrapper">
+              <input type="search" name="q" placeholder="Поиск по каталогу" value="">
+            </div>
+          </div>
+          <!-- кнпока отправки поискового запроса -->
+          <button class="button add-event-mouseover">
+            <span>Найти</span>
+            <span class="decorate"></span>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <!-- КОНЕЦ мобильный поиск в шапке -->
+
+  <!-- Основной контент  -->
+  <main>
+
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="list-reset">
+          <li>
+            <a href="http://linotrade.tw1.ru/">Главная</a>
+          </li>
+          <li>
+            <a href="http://linotrade.tw1.ru/personal/">Личный кабинет</a>
+          </li>
+          <li>
+            <a>Акты-сверки</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="section user-cabinet">
+      <div class="wrapper">
+        <div class="user-cabinet__grid">
+          <div class="user-cabinet__grid-left">
+            <div class="user-cabinet__tabs">
+              <ul class="list-reset">
+                <li>
+                  <a class="button add-event-mouseover" href="http://linotrade.tw1.ru/personal/"><span>Профиль</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="none">
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                        d="M8 15.609v2.608c0 .848-.7 1.236-1.51 1.455l-2.995.82c-1.349.364-2.47 1.912-2.495 2.943V25M14 15.609v2.608c0 .848.7 1.236 1.51 1.455l2.995.82c1.349.364 2.47 1.39 2.495 2.421V25">
+                      </path>
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                        d="M16 5.696V7.26l1 .522v2.05c0 .35-.167.675-.445.868l-.555.734V13c0 2.022-2.563 2.902-3 3.13-.438.228-1.188.522-2 .522-.813 0-1.563-.294-2-.522-.438-.228-3-1.108-3-3.13v-1.565l-.554-.734A1.055 1.055 0 0 1 5 9.833v-2.05l1-.522V5.696C6 3.102 8.014 1 10.5 1h1C13.986 1 16 3.102 16 5.696Z">
+                      </path>
+                    </svg>
+                    <span class="decorate"></span></a>
+                </li>
+                <li>
+                  <a class="button add-event-mouseover" href="http://linotrade.tw1.ru/personal/manager/"><span>Ваш
+                      менеджер</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="none">
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                        d="M8 15.609v2.608c0 .848-.7 1.236-1.51 1.455l-2.995.82c-1.349.364-2.47 1.912-2.495 2.943V25M14 15.609v2.608c0 .848.7 1.236 1.51 1.455l2.995.82c1.349.364 2.47 1.39 2.495 2.421V25">
+                      </path>
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                        d="M16 5.696V7.26l1 .522v2.05c0 .35-.167.675-.445.868l-.555.734V13c0 2.022-2.563 2.902-3 3.13-.438.228-1.188.522-2 .522-.813 0-1.563-.294-2-.522-.438-.228-3-1.108-3-3.13v-1.565l-.554-.734A1.055 1.055 0 0 1 5 9.833v-2.05l1-.522V5.696C6 3.102 8.014 1 10.5 1h1C13.986 1 16 3.102 16 5.696Z">
+                      </path>
+                    </svg>
+                    <span class="decorate"></span></a>
+                </li>
+                <li>
+                  <a class="button add-event-mouseover"
+                    href="http://linotrade.tw1.ru/personal/acts/"><span>Акты-сверки</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="none">
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M1 1h15.385L21 5.5V25H1V1Z">
+                      </path>
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M18.25 8.25h-5v-5"></path>
+                    </svg>
+                    <span class="decorate" style="left: 38.5px; top: 46px; width: 0px; height: 0px;"></span></a>
+                </li>
+                <li>
+                  <a class="button add-event-mouseover"
+                    href="http://linotrade.tw1.ru/personal/orders/"><span>Заказы</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none">
+                      <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                        d="M9 19.15c.204-.21.414-.55 1.067-.55h8c.593 0 3.852-3.37 4.267-3.85.398-.46 2.174-3.213 2.666-4.4-.309-.43-1.145-.786-2.133-.55-.943.226-1.498.924-2.133 2.2l-2.445 1.309">
+                      </path>
+                      <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                        d="M12.2 15.3H17c2.133 0 2.133-2.75 0-2.75h-3.352c-.444 0-1.278-1.1-1.982-1.1H8.999c-.72 0-1.616.603-2.133 1.1l-2.134 2.2">
+                      </path>
+                      <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                        d="m7.4 23 2.666-2.75-6.4-6.6L1 16.4 7.4 23Z"></path>
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M23.4 9.8V1H8.468v10.45"></path>
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                        d="M17.799 1v3h-4V1M11 9h1M13 9h1M15 9h1"></path>
+                    </svg>
+                    <span class="decorate" style="left: 351.5px; top: 17px; width: 0px; height: 0px;"></span></a>
+                </li>
+                <li>
+                  <a class="button add-event-mouseover"
+                    href="http://linotrade.tw1.ru/?logout=yes&amp;sessid=54db693202555f816740d68056277496"><span>Выход</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none">
+                      <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M23.5 17H13v6L2 13 13 3v6h10.5">
+                      </path>
+                    </svg>
+                    <span class="decorate"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="user-cabinet__grid-right">
+            <ul class="list-reset user-cabinet__accordions">
+
+
+              <li class="user-cabinet__accordion">
+                <div class="user-cabinet__accordion-question">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="none">
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M1 1h15.385L21 5.5V25H1V1Z">
+                    </path>
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M18.25 8.25h-5v-5"></path>
+                  </svg>
+                  <span>Акты-сверки</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                    <path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1"></path>
+                  </svg>
+                </div>
+                <div class="user-cabinet__accordion-answer">
+                  <h3 class="title">Акты-сверки</h3>
+                  <div class="user-document">
+                    <a class="button button--full add-event-mouseover" href="#" data-dialog-button="modal-2">
+                      <span>Заказать акт-сверки</span>
+                      <span class="decorate" style="left: 1080.5px; top: 0px; width: 0px; height: 0px;"></span>
+                    </a>
+                    <ul id="news-page_r46pvnby4wok_items" class="list-reset">
+                      <li class="document">
+                        <a class="document__link"
+                          href="http://linotrade.tw1.ru/upload/sale/order/properties/76e/fy4aymk9kezl7e54qu5l32ph8z4baacs.pdf"
+                          target="_blank">
+                          <div class="document__icon"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="42"
+                              fill="none">
+                              <path fill="#fff" d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7">
+                              </path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2"
+                                d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7"></path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2" d="M4 10h6V4"></path>
+                              <path fill="#44A611" d="M8 19h29v15H8z"></path>
+                              <path fill="#fff"
+                                d="M15.54 27.889h-2.198v-1.266h2.197c.36 0 .65-.059.873-.176.227-.12.393-.285.498-.492.106-.21.158-.451.158-.72 0-.262-.052-.506-.158-.733a1.274 1.274 0 0 0-.498-.55c-.223-.142-.514-.212-.873-.212h-1.67V31h-1.611v-8.531h3.281c.664 0 1.23.119 1.7.357.472.235.831.56 1.077.979.25.414.375.886.375 1.418 0 .55-.125 1.025-.375 1.424-.246.398-.605.705-1.078.92-.468.214-1.035.322-1.699.322ZM22.505 31h-1.84l.012-1.266h1.828c.496 0 .912-.109 1.248-.328.336-.222.59-.54.762-.955.172-.418.257-.918.257-1.5v-.44c0-.448-.048-.845-.146-1.189a2.381 2.381 0 0 0-.434-.867 1.804 1.804 0 0 0-.697-.533 2.366 2.366 0 0 0-.955-.182h-1.91V22.47h1.91c.57 0 1.09.095 1.559.287.472.191.88.467 1.224.826.348.355.613.781.797 1.277.188.496.281 1.051.281 1.664v.428c0 .61-.093 1.164-.28 1.664-.184.496-.45.922-.798 1.278a3.508 3.508 0 0 1-1.23.82 4.226 4.226 0 0 1-1.588.287Zm-.938-8.531V31h-1.611v-8.531h1.611Zm7.817 0V31h-1.612v-8.531h1.612Zm3.44 3.685v1.272h-3.862v-1.272h3.861Zm.45-3.685v1.271h-4.312V22.47h4.312Z">
+                              </path>
+                            </svg></div>
+
+                          <div class="document__wrapper">
+                            <h3 class="document__title">Акт за февраль</h3>
+                            <p class="document__size">pdf (15.94 КБ)</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="document">
+                        <a class="document__link"
+                          href="http://linotrade.tw1.ru/upload/sale/order/properties/76e/fy4aymk9kezl7e54qu5l32ph8z4baacs.pdf"
+                          target="_blank">
+                          <div class="document__icon"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="42"
+                              fill="none">
+                              <path fill="#fff" d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7">
+                              </path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2"
+                                d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7"></path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2" d="M4 10h6V4"></path>
+                              <path fill="#44A611" d="M8 19h29v15H8z"></path>
+                              <path fill="#fff"
+                                d="M15.54 27.889h-2.198v-1.266h2.197c.36 0 .65-.059.873-.176.227-.12.393-.285.498-.492.106-.21.158-.451.158-.72 0-.262-.052-.506-.158-.733a1.274 1.274 0 0 0-.498-.55c-.223-.142-.514-.212-.873-.212h-1.67V31h-1.611v-8.531h3.281c.664 0 1.23.119 1.7.357.472.235.831.56 1.077.979.25.414.375.886.375 1.418 0 .55-.125 1.025-.375 1.424-.246.398-.605.705-1.078.92-.468.214-1.035.322-1.699.322ZM22.505 31h-1.84l.012-1.266h1.828c.496 0 .912-.109 1.248-.328.336-.222.59-.54.762-.955.172-.418.257-.918.257-1.5v-.44c0-.448-.048-.845-.146-1.189a2.381 2.381 0 0 0-.434-.867 1.804 1.804 0 0 0-.697-.533 2.366 2.366 0 0 0-.955-.182h-1.91V22.47h1.91c.57 0 1.09.095 1.559.287.472.191.88.467 1.224.826.348.355.613.781.797 1.277.188.496.281 1.051.281 1.664v.428c0 .61-.093 1.164-.28 1.664-.184.496-.45.922-.798 1.278a3.508 3.508 0 0 1-1.23.82 4.226 4.226 0 0 1-1.588.287Zm-.938-8.531V31h-1.611v-8.531h1.611Zm7.817 0V31h-1.612v-8.531h1.612Zm3.44 3.685v1.272h-3.862v-1.272h3.861Zm.45-3.685v1.271h-4.312V22.47h4.312Z">
+                              </path>
+                            </svg></div>
+
+                          <div class="document__wrapper">
+                            <h3 class="document__title">Акт за март</h3>
+                            <p class="document__size">pdf (15.94 КБ)</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="document">
+                        <a class="document__link"
+                          href="http://linotrade.tw1.ru/upload/sale/order/properties/988/r5hryd9je1w005amvspgbh147y01qugu.docx"
+                          target="_blank">
+                          <div class="document__icon"><svg xmlns="http://www.w3.org/2000/svg" width="37" height="42"
+                              fill="none">
+                              <path fill="#fff" d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7">
+                              </path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2"
+                                d="M33 21V3a2 2 0 0 0-2-2H9L1 9v30a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2v-7"></path>
+                              <path stroke="#D9D9D9" stroke-miterlimit="10" stroke-width="2" d="M4 10h6V4"></path>
+                              <path fill="#44A611" d="M8 19h29v15H8z"></path>
+                              <path fill="#fff"
+                                d="M15.54 27.889h-2.198v-1.266h2.197c.36 0 .65-.059.873-.176.227-.12.393-.285.498-.492.106-.21.158-.451.158-.72 0-.262-.052-.506-.158-.733a1.274 1.274 0 0 0-.498-.55c-.223-.142-.514-.212-.873-.212h-1.67V31h-1.611v-8.531h3.281c.664 0 1.23.119 1.7.357.472.235.831.56 1.077.979.25.414.375.886.375 1.418 0 .55-.125 1.025-.375 1.424-.246.398-.605.705-1.078.92-.468.214-1.035.322-1.699.322ZM22.505 31h-1.84l.012-1.266h1.828c.496 0 .912-.109 1.248-.328.336-.222.59-.54.762-.955.172-.418.257-.918.257-1.5v-.44c0-.448-.048-.845-.146-1.189a2.381 2.381 0 0 0-.434-.867 1.804 1.804 0 0 0-.697-.533 2.366 2.366 0 0 0-.955-.182h-1.91V22.47h1.91c.57 0 1.09.095 1.559.287.472.191.88.467 1.224.826.348.355.613.781.797 1.277.188.496.281 1.051.281 1.664v.428c0 .61-.093 1.164-.28 1.664-.184.496-.45.922-.798 1.278a3.508 3.508 0 0 1-1.23.82 4.226 4.226 0 0 1-1.588.287Zm-.938-8.531V31h-1.611v-8.531h1.611Zm7.817 0V31h-1.612v-8.531h1.612Zm3.44 3.685v1.272h-3.862v-1.272h3.861Zm.45-3.685v1.271h-4.312V22.47h4.312Z">
+                              </path>
+                            </svg></div>
+
+                          <div class="document__wrapper">
+                            <h3 class="document__title">Акт за апрель</h3>
+                            <p class="document__size">docx (11.65 КБ)</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <a id="news-page_r46pvnby4wok_show-more-btn" href="http://linotrade.tw1.ru/personal/acts/#"
+                      class="button button--ghost show-more add-event-mouseover"><span>Показать еще</span><span
+                        class="decorate"></span></a>
+                    <div id="news-page_r46pvnby4wok_pagination" class="pagination">
+                      <ul class="pagination__list list-reset">
+                        <li class="pagination__item">
+                          <a disabled="disabled"
+                            class="pagination__link button button--icon pagination__link--prev add-event-mouseover"
+                            title="Предыдущая">
+                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2"></path>
+                            </svg>
+                            <span class="decorate"></span>
+                          </a>
+                        </li>
+
+                        <li class="pagination__item"><a
+                            class="pagination__link button active add-event-mouseover"><span>1</span><span
+                              class="decorate"></span></a></li>
+                        <li class="pagination__item"><a class="pagination__link button add-event-mouseover"
+                            href="http://linotrade.tw1.ru/personal/acts/?PAGEN_1=2"><span>2</span><span
+                              class="decorate"></span></a></li>
+
+                        <li class="pagination__item">
+                          <a href="http://linotrade.tw1.ru/personal/acts/?PAGEN_1=2"
+                            class="pagination__link button pagination__link--next button--icon add-event-mouseover"
+                            title="Следующая">
+                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2"></path>
+                            </svg>
+                            <span class="decorate"></span>
+                          </a>
+                        </li>
+                      </ul>
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+            <!-- Выход  -->
+            <a href="http://linotrade.tw1.ru/?logout=yes&amp;sessid=54db693202555f816740d68056277496"
+              class="user-cabinet__logout button add-event-mouseover"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="26" fill="none">
+                <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M23.5 17H13v6L2 13 13 3v6h10.5">
+                </path>
+              </svg>
+              <span>Выход</span><span class="decorate"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- КОНЕЦ Основной контент  -->
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__grid">
+        <!-- менюха 1 -->
+        <ul class="footer__menu-list list-reset">
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="http://linotrade.tw1.ru/catalog/"><span>Каталог</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon add-event-mouseover" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z"></path>
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z"></path>
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+            <!-- выпадающее меню -->
+            <ul class="footer__submenu list-reset">
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/catalog/kovry/"><span>Ковры</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/catalog/laminat/"><span>Ламинат</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/catalog/linoleum/"><span>Линолеум</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/catalog/kovrolin/"><span>Ковролин</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/catalog/spc-pokrytie/"><span>SPC
+                    покрытие</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/catalog/dorozhki/"><span>Дорожки</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/catalog/nitki/"><span>Нитки</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/catalog/soputstvuyushchie-tovary/"><span>Сопутствующие товары</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="http://linotrade.tw1.ru/useful/"><span>Полезный раздел</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon add-event-mouseover" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z"></path>
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z"></path>
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+            <!-- выпадающее меню -->
+            <ul class="footer__submenu list-reset">
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/useful/documentation/"><span>Документы</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/useful/dictionary/"><span>Словарь
+                    терминов</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link"
+                  href="http://linotrade.tw1.ru/useful/instructions/"><span>Инструкции</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href="http://linotrade.tw1.ru/useful/advertising/"><span>Рекламные
+                    материалы</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul> <!-- КОНЕЦ менюха 1 -->
+        <!-- менюха 2 -->
+        <ul class="footer__menu-list footer__menu-list--mod list-reset">
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="http://linotrade.tw1.ru/news/"><span>Акции и новости</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon add-event-mouseover" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z"></path>
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z"></path>
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="http://linotrade.tw1.ru/brand/"><span>Производители</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon add-event-mouseover" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z"></path>
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z"></path>
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="http://linotrade.tw1.ru/contacts/"><span>Контакты</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon add-event-mouseover" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z"></path>
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z"></path>
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+        </ul> <!-- КОНЕЦ менюха 2 -->
+        <div class="footer__right">
+          <div class="tel">
+            <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+          </div>
+          <div class="email">
+            <a href="mailto:info@linotrade.ru"><span>info@linotrade.ru</span></a>
+          </div>
+          <p class="copyright">
+            <span>© ТК «ЛИНОТРЕЙД» 2023.</span> Все права защищены.
+          </p>
+          <div class="site-developers">
+            <span>Создание сайта -</span>
+            <a class="site-developers__link" href="https://very-good.ru/" target="_blank">Very-good</a>
+            <a class="site-developers__logo" href="https://very-good.ru/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                <rect width="48" height="48" fill="#67CB33" rx="24"></rect>
+                <path fill="#fff"
+                  d="M15.742 24.07s.66-.075 1.91-2.256c0 0 .028-.038.075-.112.62 2.982 3.604 2.5 3.604 2.5l.287-1.157c-2.005.451-2.031-2.002-2.031-2.002l3.072 1.1c.273-.31.447-.697.52-1.111.029.993-.058 2.064-.337 3.17 0 0 1.857-.734 3.142.545 0 0-.123-2.221-.765-4.517.368-.235 1.155-.58 1.294.644.183 1.607 2.265 3.835 4.218 1.071 0 0-1.223.733-1.9-.79-.634-1.424-.88-3.29-2.592-2.743.98-.805 1.897-2.108.743-3.32-1.54-1.615-3.939.314-4.362.677a3.112 3.112 0 0 0-.898-.423s.99 1.76 1.341 4.302a2.942 2.942 0 0 0-1.42-1.65c-.86-.46-2.006-.377-2.854.238.18-1.538.138-3.598-.478-6.236l-2.985 1.617s2.326 4.813.208 8.009c0 0-2.708-1.767-1.007-5.34l-1.736-.338s-.895 1.093-.781 2.81c.132 1.986 1.41 4.672 3.732 5.312Zm10.069-7.912c.676.9-.337 1.707-1.216 1.882 0 0-.161-1.063-.746-1.755 0 0 1.285-1.028 1.962-.127Zm-4.457 2.656c.563.207.87.893.762 1.611l-2.247-.885c.326-.61.938-.928 1.485-.726Zm10.775 2.51h.038c-.334 1.241-.929 1.949-1.67 2.464-1.354.94-3.125.414-3.125.414.4 1.202 4.757 3.458 6.11-.527 1.355-3.986-1.093-6.712-1.093-6.712.126 1.65.077 2.899-.109 3.865-.357.057-2.252.172-1.401-3.94l-1.944-.79s-.972 5.64 3.194 5.227ZM33.535 27.134c-2.309-.601-3.785.17-3.785.17s1.39.47 1.632 2.895c.243 2.425-2.205 4.098-2.205 4.098s2.709.545 4.74-.376C35.947 33 36 30.744 36 30.424c0-.32-.157-2.688-2.465-3.29Zm-.585 5.115c-.04.002-.08.001-.121-.002.353-.394.57-1.015.542-1.705-.033-.841-.418-1.548-.942-1.85a1.23 1.23 0 0 1 .378-.08c.814-.039 1.506.745 1.545 1.75.04 1.005-.587 1.85-1.402 1.887Zm-2.635-1.76c0-1.822-1.382-3.299-3.086-3.299a2.9 2.9 0 0 0-.495.044c-.447-1.184-1.52-2.017-2.773-2.017-1.523 0-2.78 1.233-2.969 2.827-1.321.263-2.75 1.173-3.228 3.743l1.589.395s.316-.957 1.166-1.818l.031.098s.209 2.82-1.9 3.159c-2.11.338-3.386-2.172-2.734-3.836.65-1.664 1.979-1.222 1.979-1.222l2.568-2.613-.963-.433c-2.717-1.034-6.214.884-6.423 5.086-.208 4.202 4.14 6.768 7.161 4.625 1.636-1.161 1.958-2.868 1.91-4.189a2.834 2.834 0 0 0 2.202.636c.446 1.235 1.567 2.11 2.88 2.11 1.703 0 3.085-1.475 3.085-3.296Zm-5.69-1.769c-.03.05-.058.101-.086.153a1.055 1.055 0 0 1-.877.489 1.03 1.03 0 0 1-.694-.273c.216-.035.442-.06.68-.065l-.077-.846s-.39-.127-.972-.191c.09-.548.53-.965 1.063-.965.597 0 1.08.523 1.08 1.17 0 .19-.042.37-.117.528Zm1.94 2.729c-.322 0-.61-.152-.81-.392a3.282 3.282 0 0 0 1.135-1.923c.446.15.769.6.769 1.13 0 .654-.49 1.185-1.094 1.185Z">
+                </path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+  <!-- КОНЕЦ Подвал -->
+
+  <!-- оверлей  -->
+  <div class="overlay"></div>
+  <!-- КОНЕЦ оверлей  -->
+
+  <!-- Диалоговые окна -->
+
+  <!-- Уведомление -->
+  <section class="modal modal--small" data-dialog-modal="modal-notification">
+    <div class="modal__wrapper">
+      <div class="modal__header">
+        <h2 class="title"></h2>
+        <p class="subtitle"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Авторизация -->
+  <section class="modal modal--small" data-dialog-modal="modal-login">
+    <form id="authorization" action="javascript:void(0);" method="post">
+      <div class="modal__wrapper">
+
+        <!-- шапка диалогового окна -->
+        <div class="modal__header">
+          <h2 class="title">Авторизация</h2>
+        </div>
+        <!-- КОНЕЦ шапка диалогового окна -->
+
+        <!-- тело диалогового окна  -->
+        <div class="modal__body">
+          <div class="modal__grid modal__grid--mod">
+            <div class="modal__form-item">
+              <label for="question-form-login">Логин:</label>
+              <input id="question-form-login" type="text" placeholder="Введите логин" name="USER_LOGIN" required="">
+            </div>
+
+            <div class="modal__form-item">
+              <label for="question-form-password">Пароль:</label>
+              <div class="label-wrapper">
+                <input id="question-form-password" type="password" placeholder="Введите пароль" name="USER_PASSWORD"
+                  required="">
+                <a href="http://linotrade.tw1.ru/personal/acts/#" class="restore-link"
+                  data-dialog-button="modal-restore">Забыли пароль?</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- КОНЕЦ тело диалогового окна  -->
+        <div class="js-error" style="color: red; margin-top: 10px"></div>
+        <!-- Подвал диалогового окна -->
+        <div class="modal__footer modal__footer--short">
+          <div class="modal__form-item--check">
+            <input class="visually-hidden" type="checkbox" name="remember" id="remember-me" checked="">
+            <label for="remember-me">Запомнить меня</label>
+          </div>
+          <button class="button add-event-mouseover" type="submit">
+            <span>Войти</span>
+            <span class="decorate"></span>
+          </button>
+        </div>
+        <!-- КОНЕЦ Подвал диалогового окна -->
+
+        <!-- кнопка закрытия диалогового окна -->
+        <!-- класс close-btn - обязателен!  -->
+        <button class="button button--icon close-btn add-event-mouseover" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
+            <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
+          </svg>
+          <span class="decorate"></span>
+        </button>
+        <!-- КОНЕЦ кнопка закрытия диалогового окна -->
+      </div>
+
+    </form>
+  </section>
+
+  <!-- Восстановление -->
+  <section class="modal modal--small" data-dialog-modal="modal-restore">
+    <form id="sendPassword" action="javascript:void(0);" method="post">
+      <div class="modal__wrapper">
+
+        <!-- шапка диалогового окна -->
+        <div class="modal__header">
+          <h2 class="title">Забыли пароль</h2>
+          <p class="subtitle">Забыли свой пароль? Укажите свой Email или имя пользователя. Ссылку на создание нового
+            пароля вы получите по электронной почте.</p>
+        </div>
+        <!-- КОНЕЦ шапка диалогового окна -->
+
+        <!-- тело диалогового окна  -->
+        <div class="modal__body">
+          <div class="modal__grid modal__grid--mod">
+            <div class="modal__form-item">
+              <label for="question-form-login2">Имя пользователя или Email:</label>
+              <input id="question-form-login2" type="text" placeholder="Введите данные" name="email" required="">
+            </div>
+          </div>
+        </div>
+        <!-- КОНЕЦ тело диалогового окна  -->
+        <div class="js-error" style="color: red; margin-top: 10px"></div>
+        <!-- Подвал диалогового окна -->
+        <div class="modal__footer modal__footer-once">
+          <button class="button add-event-mouseover" type="submit">
+            <span>Сброс пароля</span>
+            <span class="decorate"></span>
+          </button>
+        </div>
+        <!-- КОНЕЦ Подвал диалогового окна -->
+
+        <!-- кнопка закрытия диалогового окна -->
+        <!-- класс close-btn - обязателен!  -->
+        <button class="button button--icon close-btn add-event-mouseover" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
+            <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
+          </svg>
+          <span class="decorate"></span>
+        </button>
+        <!-- КОНЕЦ кнопка закрытия диалогового окна -->
+      </div>
+
+    </form>
+  </section>
+
+  <!-- Задать вопрос -->
+  <section class="modal" data-dialog-modal="modal-2">
+    <form action="javascript:void(0);" method="post">
+      <div class="modal__wrapper">
+
+        <!-- шапка диалогового окна -->
+        <div class="modal__header">
+          <h2 class="title">Заказ акта-сверки</h2>
+          <p class="subtitle">Пожалуйста, укажите период за который Вам необходим акт-сверки</p>
+        </div>
+        <!-- КОНЕЦ шапка диалогового окна -->
+
+        <!-- тело диалогового окна  -->
+        <div class="modal__body">
+          <div class="modal__grid">
+
+            <div class="modal__form-item">
+              <label for="question-form-tel">Период с:</label>
+              <div class="calendar-date">
+                <input type="text" id="calendar-start-date" placeholder="дд.мм.гггг">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none"><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18 3h4c.552 0 1 .422 1 .941V18.06c0 .52-.448.941-1 .941H2c-.552 0-1-.422-1-.941V3.94C1 3.421 1.448 3 2 3h16Z"/><path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18 1v4M6 1v4"/><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h22"/></svg>
+              </div>
+
+            </div>
+
+            <div class="modal__form-item">
+              <label for="question-form-name">по:</label>
+              <div class="calendar-date">
+                <input type="text" id="calendar-finish-date" placeholder="дд.мм.гггг">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none"><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18 3h4c.552 0 1 .422 1 .941V18.06c0 .52-.448.941-1 .941H2c-.552 0-1-.422-1-.941V3.94C1 3.421 1.448 3 2 3h16Z"/><path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18 1v4M6 1v4"/><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M1 8h22"/></svg>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- КОНЕЦ тело диалогового окна  -->
+
+        <!-- Подвал диалогового окна -->
+        <div class="modal__footer">
+          <div class="modal__form-item--check">
+            <input class="visually-hidden" type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+            <label for="promo-form-consent">Я согласен с условиями обработки <a
+                href="http://linotrade.tw1.ru/personal/acts/#" target="_blank">персональных
+                данных</a></label>
+          </div>
+
+          <button class="button add-event-mouseover" type="submit">
+            <span>Отправить</span>
+            <span class="decorate"></span>
+          </button>
+        </div>
+        <!-- КОНЕЦ Подвал диалогового окна -->
+
+        <!-- кнопка закрытия диалогового окна -->
+        <!-- класс close-btn - обязателен!  -->
+        <button class="button button--icon close-btn add-event-mouseover" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
+            <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
+          </svg>
+          <span class="decorate"></span>
+        </button>
+        <!-- КОНЕЦ кнопка закрытия диалогового окна -->
+      </div>
+
+    </form>
+  </section>
+  <!-- КОНЕЦ Диалоговые окна  -->
+
+  <!-- Plugin JS -->
+  <script src="./libs/air-datepicker.js" defer></script>
+
+  <script src="./js/scripts.js" defer></script>
+</body>
+
+</html>

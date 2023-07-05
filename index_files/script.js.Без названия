@@ -1,0 +1,83 @@
+document.addEventListener('DOMContentLoaded', function () {
+    //Отслеживаем изменение количества выводимых элементов
+    let inputElementCount = document.querySelector('input[name="element-count"]');
+    inputElementCount.addEventListener("input", function (e) {
+        document.cookie = "elementCount=" + inputElementCount.value;
+        location.reload();
+    })
+});
+
+;(function (window) {
+    if (typeof window.ReviewPage === 'function') {
+        return;
+    }
+
+    window.ReviewPage = function (params = {}) {
+        if (!params.btn) {
+            return;
+        }
+
+        this.isDisabled = false;
+        this.btn = params.btn;
+        this.items = params.items;
+        this.divPagination = params.divPagination;
+        this.ajaxUrl = params.ajaxUrl;
+        this.signedData = params.signedData;
+        this.pagination = params.pagination;
+
+        this.handleClickBound = this.handleClick.bind(this);
+        this.init();
+    }
+
+    window.ReviewPage.prototype = {
+        init: function () {
+            this.initEvents();
+        },
+        initEvents: function () {
+            this.btn.addEventListener('click', this.handleClickBound);
+        },
+        handleClick: function (e) {
+            e.preventDefault();
+            if (!(window.BX && window.BX.ajax) || this.isDisabled) {
+                return;
+            }
+            var self = this;
+            window.BX.ajax({
+                url: this.ajaxUrl + '?PAGEN_1=' + (parseInt(this.pagination.page) + 1),
+                method: 'POST',
+                data: {
+                    signedData: this.signedData,
+                },
+                dataType: 'json',
+                onsuccess: function (res) {
+                    var el = document.createElement('div');
+                    el.innerHTML = res.content;
+                    if (self.items) {
+                        var fragment = document.createDocumentFragment();
+                        Array.from(el.children).forEach(function (el) {
+                            fragment.appendChild(el);
+                        });
+                        self.items.appendChild(fragment);
+                    }
+
+                    if (self.divPagination) {
+                        self.divPagination.innerHTML = res.contentPagination;
+                    }
+
+                    self.pagination = res.pagination;
+                    if (res.pagination && parseInt(res.pagination.page) >= parseInt(res.pagination.pageCount)) {
+                        self.isDisabled = true;
+                        self.removeBtn();
+                    }
+                },
+            })
+        },
+        removeBtn() {
+            var el = this.btn;
+            if (el) {
+                this.btn.removeEventListener('click', this.handleClickBound);
+                el.parentNode.removeChild(el);
+            }
+        },
+    }
+})(window);

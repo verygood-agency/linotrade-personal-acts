@@ -1,0 +1,15 @@
+.custom-calendar {
+  z-index: 9999999999999999999999;
+}
+.calendar-date {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    right: 24px;
+    pointer-events: none;
+  }
+}
+

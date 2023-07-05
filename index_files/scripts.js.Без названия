@@ -1,0 +1,39 @@
+// Функции
+// функция подключения скриптов
+function includeFiles(url) {
+  var script = document.createElement('script');
+  script.src = url;
+  document.getElementsByTagName('head')[0].appendChild(script);
+};
+
+// Основная рабочая область
+document.addEventListener("DOMContentLoaded", () => {
+
+  // подключаем файлы тут
+  // includeFiles("/local/templates/main/js/parts/buttons-animate.js");
+  includeFiles("/local/templates/main/js/parts/hover-animate.js");
+  includeFiles("/local/templates/main/js/parts/custom-select.js?v=7");
+  includeFiles("/local/templates/main/js/parts/accordion.js?v=1");
+  includeFiles("/local/templates/main/js/parts/catalog-navigation.js");
+  includeFiles("/local/templates/main/js/parts/mobile-menu-in-basement.js");
+  includeFiles("/local/templates/main/js/parts/button-catalog-desktop.js");
+  includeFiles("/local/templates/main/js/parts/button-catalog-mobile.js");
+  includeFiles("/local/templates/main/js/parts/button-navigation-mobile.js");
+  includeFiles("/local/templates/main/js/parts/button-sub-navigation-mobile.js");
+  includeFiles("/local/templates/main/js/parts/button-search-mobile.js");
+  includeFiles("/local/templates/main/js/parts/modals.js?v=1");
+  includeFiles("/local/templates/main/js/parts/price-range.js?v=3");
+  includeFiles("/local/templates/main/js/parts/catalog-filter.js?v=5");
+  // includeFiles("/local/templates/main/js/parts/add-favorite.js");
+  includeFiles("/local/templates/main/js/parts/product-card-options.js?v=2");
+  // includeFiles("/local/templates/main/js/parts/show-more-product-cards.js");
+  includeFiles("/local/templates/main/js/parts/filter-mobile-show.js");
+  includeFiles("/local/templates/main/js/parts/swiper-collection.js?v=2");
+  includeFiles("/local/templates/main/js/parts/input-number.js?v=2");
+  includeFiles("/local/templates/main/js/parts/scroll-to-anchor.js");
+  includeFiles("/local/templates/main/js/parts/changing-height-map.js");
+  // includeFiles("/local/templates/main/js/parts/removing-item-from-cart.js");
+
+
+
+});
